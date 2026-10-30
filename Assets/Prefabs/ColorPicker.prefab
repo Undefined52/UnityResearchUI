@@ -250,7 +250,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 618791553183041047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c62ee22a6d2a8c4593710bb925f5521, type: 3}
+  m_Script: {fileID: 11500000, guid: 4545e6cd6148aaf4d8a7b0e9ebbcddcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorPicker
   red: {fileID: 6196148308241042286}
@@ -455,6 +455,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7197443714982546137, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: labelName
       value: B
@@ -501,7 +513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8329378834392426573, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 974.12823
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8329378834392426573, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -557,7 +569,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a675f7b0394d94a936376f5abcb140, type: 3}
+  m_Script: {fileID: 11500000, guid: a97a6d02d995fee4eb31a53ef517f516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatSlider
 --- !u!1001 &3899924734359323063
@@ -664,6 +676,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7197443714982546137, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: labelName
       value: R
@@ -710,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8329378834392426573, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 974.12823
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8329378834392426573, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -766,7 +790,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a675f7b0394d94a936376f5abcb140, type: 3}
+  m_Script: {fileID: 11500000, guid: a97a6d02d995fee4eb31a53ef517f516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatSlider
 --- !u!1001 &9156342315570505514
@@ -869,6 +893,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483564154989687982, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
+      propertyPath: right.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7197443714982546137, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: labelName
       value: G
@@ -915,7 +947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8329378834392426573, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 974.12823
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8329378834392426573, guid: 80bb4e9df29578c44a1cefce2dee392e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -971,6 +1003,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a675f7b0394d94a936376f5abcb140, type: 3}
+  m_Script: {fileID: 11500000, guid: a97a6d02d995fee4eb31a53ef517f516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatSlider

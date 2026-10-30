@@ -1,7 +1,11 @@
+using TMPro;
+
 using UnityEngine;
 
 public class hoverHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject text;
+    
     private Animator animator;
     
     private void Awake()
@@ -21,5 +25,11 @@ public class hoverHandler : MonoBehaviour
     {   
         animator.ResetTrigger("hover");
         animator.SetTrigger("no_hover");
+    }
+
+
+    public void OnShowText(float active)
+    {
+        text.SetActive(active != 0);
     }
 }
