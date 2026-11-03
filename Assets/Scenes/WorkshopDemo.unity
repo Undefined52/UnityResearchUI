@@ -1195,26 +1195,26 @@ PrefabInstance:
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1146864295}
+      objectReference: {fileID: 1946486410}
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnChangeCloths
+      value: Changed
       objectReference: {fileID: 0}
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: clothingUpdater, Assembly-CSharp
+      value: priceTagHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 2800000, guid: 5822fc362d71369d3a6795110b65dea5, type: 3}
+      objectReference: {fileID: 1946486408}
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Texture, UnityEngine
+      value: UnityEngine.UI.Toggle, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 5684069170069169922, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2729,6 +2729,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413189143}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1459139758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1789010977909954963, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+  m_PrefabInstance: {fileID: 1598658383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1492444851 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4464851573621985032, guid: dee3fe34e0333f918b9f4f304a582c0f, type: 3}
@@ -2856,6 +2861,26 @@ PrefabInstance:
     - target: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Changed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115331519739481541, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115331519739481541, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115331519739481541, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1459139758}
+    - target: {fileID: 5115331519739481541, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115331519739481541, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: hoverHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5684069170069169922, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3697,6 +3722,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8591316276839345491, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
   m_PrefabInstance: {fileID: 799323671}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1946486408 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4517724364498203230, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+  m_PrefabInstance: {fileID: 799323671}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946486407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
+--- !u!114 &1946486410 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8054663087908258549, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}
+  m_PrefabInstance: {fileID: 799323671}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946486407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d847caf42393853b8228e74a0608d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::priceTagHandler
 --- !u!4 &1960498297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8896692214178559709, guid: e3805ef6f86948083a2a0b635bc42d81, type: 3}

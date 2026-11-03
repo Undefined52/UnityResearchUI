@@ -1,5 +1,3 @@
-using TMPro;
-
 using UnityEngine;
 
 public class hoverHandler : MonoBehaviour
@@ -16,15 +14,13 @@ public class hoverHandler : MonoBehaviour
 
     public void OnHoverEnter()
     {
-        animator.ResetTrigger("no_hover");
-        animator.SetTrigger("hover");   
+        animator.SetBool("Hovering", true);
     }
 
 
     public void OnHoverExit()
     {   
-        animator.ResetTrigger("hover");
-        animator.SetTrigger("no_hover");
+        animator.SetBool("Hovering", false);
     }
 
 

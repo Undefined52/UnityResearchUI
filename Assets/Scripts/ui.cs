@@ -39,7 +39,7 @@ public class HUDManager : MonoBehaviour
 
     public void AskToBuy(GameObject tag)       // plain button
     {
-        priceTag = tag.GetComponent<priceTagHandler>();
+        priceTag = tag.GetComponent<priceTagHandler>(); // get the product info from the caller
         confirmText.text = "Buy this for " + priceTag.price.ToString("0.00") + "?";
         confirmPopup.SetActive(true);
     }
@@ -53,7 +53,7 @@ public class HUDManager : MonoBehaviour
         
         UpdateMoney(-priceTag.price);
         
-        priceTag.OnEquipConfirmed();
+        priceTag.OnEquipConfirmed(); // let the object know it is purchased
         confirmPopup.SetActive(false);
     }
 

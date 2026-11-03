@@ -9,9 +9,12 @@ public class EyeHandler : MonoBehaviour
 
     void Update()
     {
-        Vector2 screen = new Vector2 (Screen.height, Screen.height);
+        // this only works for as long as the canvas of the eye remains in the same position in screen space.
+        // But the canvas is world space so it might move
+        
+        Vector2 screen = new (Screen.height, Screen.height);
         Vector2 mousePosition = Mouse.current.position.ReadValue() / screen - offset;
-        Vector2 eye = Vector2.MoveTowards(Vector2.zero, mousePosition*radius, radius);
+        Vector2 eye = Vector2.MoveTowards(Vector2.zero, mousePosition*radius, radius); // stay on top of the eye
         eyePosition.anchoredPosition = eye;
     }
 }

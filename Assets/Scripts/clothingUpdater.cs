@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-
-using UnityEditor.UIElements;
 
 using UnityEngine;
 
@@ -9,6 +6,8 @@ public class clothingUpdater : MonoBehaviour
 {
     public void OnChangeCloths(Texture texture)
     {
+        // update all the child components with the Shirt tag
+        
         for (int childIdx = 0; childIdx < transform.childCount; childIdx++) {
             Transform child = transform.GetChild(childIdx);
             if (child.CompareTag("Shirt")) {

@@ -14,7 +14,8 @@ public class LabeledSlider : MonoBehaviour
 
     public string LabelName => labelName;
     public int Value => Mathf.RoundToInt(slider.value);
-
+    
+    // make sure the listener is only active when the component is enabled
     private void OnEnable()
     {
         slider.onValueChanged.AddListener(HandleSliderChanged);
@@ -39,12 +40,12 @@ public class LabeledSlider : MonoBehaviour
     private void HandleSliderChanged(float x)
     {
         Refresh();
-        OnValueChanged?.Invoke(this, Value);
+        OnValueChanged?.Invoke(this, Value); // send the new value event to the parent color slider
     }
 
     private void Refresh()
     {
         labelText.text = labelName;
-        valueText.text = Value.ToString();
+        valueText.text = Value.ToString(); // update the numeric value
     }
 }

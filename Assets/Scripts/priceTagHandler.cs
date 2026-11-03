@@ -28,14 +28,17 @@ public class priceTagHandler : MonoBehaviour
     
     public void Changed(Toggle value)
     {
+        // this event is called from the toggle component.
+        
         screenText.text = value.isOn ? "*" : price.ToString("0.00");
-        animator.SetTrigger("Changed");
+        animator.SetTrigger("Changed"); // this triggers the blinking animation
     }
     
     
     public void OnEquipConfirmed()
-    {
-        _toggle.isOn = true;
-        purchase.Invoke();
+    {   
+        // this function is called when the yes option is pressed in the popup
+        _toggle.isOn = true; // we set this toggle to true sending all other pricetags an event (so they can go to not selected)
+        purchase.Invoke(); // We send the got purchased event (which sends the texture to the player)
     }
 }
