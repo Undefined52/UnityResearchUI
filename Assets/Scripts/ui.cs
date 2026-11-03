@@ -4,9 +4,9 @@ using TMPro;
 
 public class HUDManager : MonoBehaviour
 {
-    public GameObject nameForm;
-    public TMP_InputField nameInput;
-    public TMP_Text nameText;
+    // public GameObject nameForm;
+    // public TMP_InputField nameInput;
+    // public TMP_Text nameText;
     public Slider moneyBar;
     public TMP_Text moneyText;
     public GameObject confirmPopup;
@@ -17,7 +17,7 @@ public class HUDManager : MonoBehaviour
 
     void Start()
     {
-        nameForm.SetActive(true);
+        // nameForm.SetActive(true);
         confirmPopup.SetActive(false);
         moneyBar.maxValue = money;
         UpdateMoney();
@@ -30,12 +30,12 @@ public class HUDManager : MonoBehaviour
         moneyText.text = money.ToString("0.00");
     }
 
-    public void ConfirmName()               // OK button
-    {
-        if (string.IsNullOrWhiteSpace(nameInput.text)) return;
-        nameText.text = nameInput.text;
-        nameForm.SetActive(false);
-    }
+    // public void ConfirmName()               // OK button
+    // {
+    //     if (string.IsNullOrWhiteSpace(nameInput.text)) return;
+    //     nameText.text = nameInput.text;
+    //     nameForm.SetActive(false);
+    // }
 
     public void AskToBuy(GameObject tag)       // plain button
     {
