@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class hoverHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject text;
+    
     private Animator animator;
     
     private void Awake()
@@ -12,14 +14,18 @@ public class hoverHandler : MonoBehaviour
 
     public void OnHoverEnter()
     {
-        animator.ResetTrigger("no_hover");
-        animator.SetTrigger("hover");   
+        animator.SetBool("Hovering", true);
     }
 
 
     public void OnHoverExit()
     {   
-        animator.ResetTrigger("hover");
-        animator.SetTrigger("no_hover");
+        animator.SetBool("Hovering", false);
+    }
+
+
+    public void OnShowText(float active)
+    {
+        text.SetActive(active != 0);
     }
 }
