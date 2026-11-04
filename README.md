@@ -125,7 +125,7 @@ The workshop has four parts. Each part is one short table of steps, and each one
 
 | Step | What you do | What you learn |
 |---|---|---|
-| 1 | Select the Canvas created in Part 1. On the **Canvas Scaler**, set **UI Scale Mode** to **Scale With Screen Size** (1920 x 1080). | The UI scales with the resolution to fit different screens. |
+| 1 | On the **Canvas Scaler**, set **UI Scale Mode** to **Scale With Screen Size** (1920 x 1080). | The UI scales with the resolution to fit different screens. |
 | 2 | Add a **Vertical Layout Group** to the Panel. | The group stacks its children automatically. |
 | 3 | Change **Spacing** and **Padding**. | Layout replaces placing things by hand. |
 | 4 | Add a **Layout Element** to one child and set a **Preferred Height**. | You can override the size of one child. |
